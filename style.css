@@ -1,0 +1,71 @@
+body {
+    background: linear-gradient(135deg, rgba(36, 159, 207, 1), rgba(10, 10, 112, 1));
+    height: 100vh;
+}
+
+.stopwatch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#time {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+    color: white;
+}
+
+.button {
+    margin: 5px;
+    border-radius: 1000px;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    background: linear-gradient(to right, rgb(36, 159, 207), rgb(10, 10, 112));
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    border-radius: 1000px;
+    background: linear-gradient(45deg, rgb(0, 225, 255), rgb(0, 78, 245));
+    background-clip: border-box;
+    padding: 2px;
+}
+
+.button:hover{
+    background: linear-gradient(to right, rgb(65, 171, 212), rgb(2, 2, 158));
+}
+
+.button:active{
+    width: 70px;
+    height: 70px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+.triangle {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 20px solid rgb(0, 217, 255);
+}
+
+.square {
+    border: 13px solid rgb(0, 217, 255);
+}
+
+.circle{
+    border-radius: 10000px;
+    border: 17px solid rgb(0, 217, 255);
+}
